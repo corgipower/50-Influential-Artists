@@ -1,0 +1,48 @@
+.title-container {
+    background-image:  url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.artists-container {
+    display: flex;
+    justify-content: space-evenly;
+    @media @tablet {
+        flex-direction: column;
+    }
+    .artist {
+        width: 45%;
+        @media @tablet {
+            width: 90%;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 25px;
+            display: block;
+        }
+        a {
+            display: block;
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+            margin: 2rem 0;
+            text-decoration: none;
+        }
+        .bio {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto 2rem auto;
+            font-size: 1.4rem;
+        }
+    }
+}

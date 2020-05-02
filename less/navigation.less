@@ -1,0 +1,25 @@
+header {
+    nav {
+        .centered-flex();
+        padding: 3%;
+        @media @phone {
+            flex-direction: column;
+        }
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            padding: 0 3% 0 3%;
+            color: black;
+            .current {
+                font-weight: bold;
+            }
+            border-right: 1px solid black;
+            .last {
+                border-right: none;
+            }
+            @media @tablet {
+                border: none;
+            }
+        }
+    }
+}
